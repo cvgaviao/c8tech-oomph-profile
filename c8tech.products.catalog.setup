@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:ProductCatalog
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
+    name="c8tech.eclipse.ide.catalog"
+    label="C8Tech Eclipse IDE Catalog">
+  <annotation
+      source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+    <detail
+        key="imageURI">
+      <value>https://raw.githubusercontent.com/cvgaviao/c8tech-oomph-profiles/master/c8tech-logo.png</value>
+    </detail>
+  </annotation>
+  <setupTask
+      xsi:type="setup:InstallationTask"
+      id="installation"/>
+  <setupTask
+      xsi:type="setup.p2:P2Task">
+    <requirement
+        name="org.eclipse.oomph.setup.feature.group"/>
+    <repository
+        url="${oomph.update.url}"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:EclipseIniTask"
+      option="-Xmx"
+      value="2048m"
+      vm="true"/>
+  <setupTask
+      xsi:type="setup:EclipseIniTask"
+      option="-Doomph.redirection.c8tech_products"
+      value="index:/redirectable.projects.setup->https://raw.githubusercontent.com/cvgaviao/c8tech-oomph-profiles/master/c8tech.products.catalog.setup/"
+      vm="true">
+    <description>maps the products catalog setup</description>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:EclipseIniTask"
+      option="-Doomph.redirection.c8tech_products_dir"
+      value="index:/products/->https://raw.githubusercontent.com/cvgaviao/c8tech-oomph-profiles/master/products/"
+      vm="true">
+    <description>maps the directory where product setup files are located</description>
+  </setupTask>      
+  <product href="products/c8tech.eclipse.java.ide.oomph.setup#/"/>
+  <product href="products/c8tech.eclipse.cpp.ide.oomph.setup#/"/>
+  <description>A catalog of Eclipse IDE customized to work with the C8Tech's open source projects.</description>
+</setup:ProductCatalog>
