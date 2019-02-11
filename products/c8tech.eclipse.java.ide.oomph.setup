@@ -5,7 +5,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
-    name="c8tech.eclipse.java.ide.oomph.setup"
+    name="c8tech.eclipse.ide.oomph.setup.java"
     label="C8tech Eclipse Java IDE">
   <annotation
       source="http://www.eclipse.org/oomph/setup/BrandingInfo">
@@ -29,11 +29,6 @@
     <repository
         url="${oomph.update.url}"/>
   </setupTask>
-  <setupTask
-      xsi:type="setup:EclipseIniTask"
-      option="-Xmx"
-      value="2048m"
-      vm="true"/>
   <setupTask
       xsi:type="setup.p2:P2Task">
     <requirement
@@ -65,6 +60,11 @@
     <repository
         url="http://products.reprezen.com/swagedit/latest/"/>
   </setupTask>
+  <setupTask
+      xsi:type="setup:EclipseIniTask"
+      option="-Xmx"
+      value="2048m"
+      vm="true"/>
   <version name="2019-03"
       label="2019-03"
       requiredJavaVersion="11">
@@ -80,6 +80,8 @@
       <requirement
           name="org.eclipse.rcp.feature.group"
           versionRange="[4.11.0,5.0.0)"/>
+      <requirement
+          name="org.eclipse.pde.feature.group"/>
       <requirement
           name="org.eclipse.buildship.feature.group"/>
       <requirement
@@ -114,6 +116,8 @@
           name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
       <requirement
           name="org.eclipse.mylyn_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.github.feature.feature.group"/>
       <requirement
           name="org.eclipse.tips.feature.feature.group"/>
       <requirement
