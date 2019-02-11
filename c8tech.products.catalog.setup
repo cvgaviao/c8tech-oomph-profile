@@ -32,7 +32,7 @@
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.c8tech_products"
-      value="index:/redirectable.projects.setup->https://raw.githubusercontent.com/cvgaviao/c8tech-oomph-profiles/master/c8tech.products.catalog.setup/"
+      value="index:/redirectable.projects.setup->https://raw.githubusercontent.com/cvgaviao/c8tech-oomph-profiles/master/c8tech.products.catalog.setup"
       vm="true">
     <description>maps the products catalog setup</description>
   </setupTask>
