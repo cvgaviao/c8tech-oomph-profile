@@ -107,6 +107,8 @@
       <requirement
           name="org.eclipse.mylyn.hudson.feature.group"/>
       <requirement
+          name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
+      <requirement
           name="org.eclipse.mylyn.ide_feature.feature.group"/>
       <requirement
           name="org.eclipse.mylyn.java_feature.feature.group"/>
@@ -114,6 +116,8 @@
           name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
       <requirement
           name="org.eclipse.mylyn_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.builds.sdk"/>
       <requirement
           name="org.eclipse.mylyn.pde_feature.feature.group"/>
       <requirement
@@ -126,6 +130,8 @@
           name="org.eclipse.wst.xml_ui.feature.feature.group"/>
       <requirement
           name="org.eclipse.jgit.ssh.apache.feature.group"/>
+      <requirement
+          name="org.apache.xmlrpc"/>
       <repository
           url="http://download.eclipse.org/releases/2019-03"/>
       <repository
