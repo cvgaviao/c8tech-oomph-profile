@@ -121,8 +121,6 @@
       <requirement
           name="org.eclipse.mylyn.pde_feature.feature.group"/>
       <requirement
-          name="org.eclipse.mylyn.sdk_feature.feature.group"/>
-      <requirement
           name="org.eclipse.mylyn.github.feature.feature.group"/>
       <requirement
           name="org.eclipse.tips.feature.feature.group"/>
