@@ -78,6 +78,14 @@
       option="-Xmx"
       value="2048m"
       vm="true"/>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      label="Oomph">
+    <requirement
+        name="org.eclipse.oomph.setup.feature.group"/>
+    <repository
+        url="${oomph.update.url}"/>
+  </setupTask>
   <version name="2019-03"
       label="2019-03"
       requiredJavaVersion="11">
