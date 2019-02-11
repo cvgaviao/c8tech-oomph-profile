@@ -117,7 +117,7 @@
       <requirement
           name="org.eclipse.mylyn_feature.feature.group"/>
       <requirement
-          name="org.eclipse.mylyn.builds.sdk"/>
+          name="org.eclipse.mylyn.builds.sdk.feature.group"/>
       <requirement
           name="org.eclipse.mylyn.pde_feature.feature.group"/>
       <requirement
