@@ -222,7 +222,7 @@
   </setupTask>
   
   <project href="user:/c8tech.projects.catalog.setup?name='user.project',label='&lt;User>',description='A container project for local user projects that are virtual members of the C8Tech Projects project catalog'#/"/>
-  <project href="file://home/cvgaviao/Development/Development_Java/C8Tech-Projects/c8tech-oomph-profiles/projects/c8tech.oomph.project.java.vxosgi.setup#/" />
+  <project href="https://raw.githubusercontent.com/cvgaviao/c8tech-vxosgi/master/resources/oomph/c8tech.vxosgi.oomph.project.setup#/" />
 
 
 
