@@ -25,13 +25,6 @@
   <setupTask
       xsi:type="setup.p2:P2Task">
     <requirement
-        name="org.eclipse.oomph.setup.feature.group"/>
-    <repository
-        url="${oomph.update.url}"/>
-  </setupTask>
-  <setupTask
-      xsi:type="setup.p2:P2Task">
-    <requirement
         name="org.sonarlint.eclipse.feature.feature.group"/>
     <repository
         url="https://eclipse-uc.sonarlint.org"/>
@@ -61,6 +54,13 @@
         url="http://products.reprezen.com/swagedit/latest/"/>
   </setupTask>
   <setupTask
+      xsi:type="setup.p2:P2Task">
+    <requirement
+        name="zipeditor.feature.group"/>
+    <repository
+        url="http://zipeditor.sourceforge.net/update"/>
+  </setupTask>
+  <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Xmx"
       value="2048m"
@@ -83,13 +83,13 @@
       <requirement
           name="org.eclipse.pde.feature.group"/>
       <requirement
-          name="org.eclipse.buildship.feature.group"/>
-      <requirement
           name="org.eclipse.eclemma.feature.feature.group"/>
       <requirement
           name="org.eclipse.egit.feature.group"/>
       <requirement
           name="org.eclipse.egit.mylyn.feature.group"/>
+      <requirement
+          name="org.eclipse.egit.gitflow.feature.feature.group"/>
       <requirement
           name="org.eclipse.epp.mpc.feature.group"/>
       <requirement
@@ -100,8 +100,6 @@
           name="org.eclipse.m2e.feature.feature.group"/>
       <requirement
           name="org.eclipse.m2e.logback.feature.feature.group"/>
-      <requirement
-          name="org.eclipse.mylyn.bugzilla_feature.feature.group"/>
       <requirement
           name="org.eclipse.mylyn.context_feature.feature.group"/>
       <requirement
@@ -117,15 +115,28 @@
       <requirement
           name="org.eclipse.mylyn_feature.feature.group"/>
       <requirement
+          name="org.eclipse.mylyn.pde_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.sdk_feature.feature.group"/>
+      <requirement
           name="org.eclipse.mylyn.github.feature.feature.group"/>
       <requirement
           name="org.eclipse.tips.feature.feature.group"/>
       <requirement
           name="org.eclipse.wst.xml_ui.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.jgit.ssh.apache.feature.group"/>
       <repository
           url="http://download.eclipse.org/releases/2019-03"/>
       <repository
           url="http://download.eclipse.org/technology/epp/packages/2019-03"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task">
+      <requirement
+          name="org.jboss.tools.maven.apt.feature.feature.group"/>
+      <repository
+          url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt"/>
     </setupTask>
     <description>C8tech Eclipse CPP IDE for 2019-03.</description>
   </version>
