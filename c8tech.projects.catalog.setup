@@ -200,10 +200,6 @@
       <description>Choose from the available Github URIs</description>
     </setupTask>
   </setupTask>
-  <project href="https://raw.githubusercontent.com/cvgaviao/c8tech-vxosgi/master/src/oomph/c8tech.vxosgi.oomph.project.setup#/"/>
   <project href="https://raw.githubusercontent.com/cvgaviao/c8tech-tools-maven-library/master/src/oomph/c8tech.tools.maven.oomph.project.setup#/"/>
-  <project href="https://raw.githubusercontent.com/cvgaviao/osgi-container-maven-plugin/master/src/oomph/c8tech.osgi.container.maven.plugin.oomph.project.setup#/"/>
-  <project href="https://raw.githubusercontent.com/cvgaviao/osgi-repository-maven-plugin/master/src/oomph/c8tech.osgi.repository.maven.plugin.oomph.project.setup#/"/>
-  <project href="https://raw.githubusercontent.com/cvgaviao/osgi-subsystem-maven-plugin/master/src/oomph/c8tech.osgi.subsystem.maven.plugin.oomph.project.setup#/"/>
   <description>C8Tech Projects provides cool projects.</description>
 </setup:ProjectCatalog>
