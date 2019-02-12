@@ -3,12 +3,9 @@
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:git="http://www.eclipse.org/oomph/setup/git/1.0"
-    xmlns:jdt="http://www.eclipse.org/oomph/setup/jdt/1.0"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
-    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/git/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore"
-    name="c8tech.projects.catalog"
-    label="C8Tech Projects">
+    name="c8tech.projects.github.catalog"
+    label="C8Tech Projects (Github)">
   <annotation
       source="http://www.eclipse.org/oomph/setup/BrandingInfo">
     <detail
@@ -220,11 +217,11 @@
           name="c8tech.ws.root"/>
     </setupTask>
   </setupTask>
-  
   <project href="user:/c8tech.projects.catalog.setup?name='user.project',label='&lt;User>',description='A container project for local user projects that are virtual members of the C8Tech Projects project catalog'#/"/>
-  <project href="https://raw.githubusercontent.com/cvgaviao/c8tech-vxosgi/master/resources/oomph/c8tech.vxosgi.oomph.project.setup#/" />
-
-
-
+  <project href="https://raw.githubusercontent.com/cvgaviao/c8tech-vxosgi/master/src/oomph/c8tech.vxosgi.oomph.project.setup#/"/>
+  <project href="https://raw.githubusercontent.com/cvgaviao/c8tech-tools-maven-library/master/src/oomph/c8tech.tools.maven.oomph.project.setup#/"/>
+  <project href="https://raw.githubusercontent.com/cvgaviao/osgi-container-maven-plugin/master/src/oomph/c8tech.osgi.container.maven.plugin.oomph.project.setup#/"/>
+  <project href="https://raw.githubusercontent.com/cvgaviao/osgi-repository-maven-plugin/master/src/oomph/c8tech.osgi.repository.maven.plugin.oomph.project.setup#/"/>
+  <project href="https://raw.githubusercontent.com/cvgaviao/osgi-subsystem-maven-plugin/master/src/oomph/c8tech.osgi.subsystem.maven.plugin.oomph.project.setup#/"/>
   <description>C8Tech Projects provides cool projects.</description>
 </setup:ProjectCatalog>
